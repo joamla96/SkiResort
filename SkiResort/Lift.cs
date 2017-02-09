@@ -7,7 +7,7 @@ using System.Threading;
 // This class manages all the lifts
 
 namespace SkiResort {
-	class Lift {
+	public class Lift {
 		LiftLine Line;
 		int Passengers;
 		Thread myThread;
@@ -21,8 +21,8 @@ namespace SkiResort {
 
 		public void Run() {
 			Passengers = Line.TakeLoad();
-			Thread.Sleep(Line.LiftTime);
-			Line.To.GiveLoad(Passengers);			
+			Thread.Sleep(new TimeSpan(0, Line.LiftTime, 0));
+			Line.To.TakePassenger(Passengers);			
 		}
 	}
 }

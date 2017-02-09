@@ -1,8 +1,8 @@
 ﻿namespace SkiResort {
-	internal interface IPlace {
+	public interface IPlace {
 		int Weight { get; }
 		int Que { get; }
 
-		void TakePassenger();
+		void TakePassenger(int Passengers);
 	}
 }
