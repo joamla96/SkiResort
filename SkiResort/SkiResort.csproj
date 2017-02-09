@@ -42,7 +42,6 @@
   <ItemGroup>
     <Compile Include="Lift.cs" />
     <Compile Include="Resort.cs" />
-    <Compile Include="Skiier.cs" />
     <Compile Include="Slope.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
