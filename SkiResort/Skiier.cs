@@ -6,6 +6,5 @@ using System.Threading.Tasks;
 
 namespace SkiResort {
 	public class Skiier {
-		public IPlace Place { get; set; } // Where Am i now?
 	}
 }
