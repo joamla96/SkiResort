@@ -40,7 +40,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="KeyGenerator.cs" />
     <Compile Include="Lift.cs" />
     <Compile Include="Point.cs" />
     <Compile Include="Resort.cs" />

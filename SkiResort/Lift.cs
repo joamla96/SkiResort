@@ -12,10 +12,9 @@ namespace SkiResort {
 		public int TimeInLift; // In ms
 		public int TimePerLift; // in MS
 
-		public long ID { get; private set; }
 		public string Name { get; private set; }
 
-		public int DestinationID { get; set; } // ID of the Slope we're going to.
+		public Point Destination { get; set; } // Point object for destination
 
 		public int InQue = 0;
 	}

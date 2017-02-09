@@ -12,14 +12,10 @@ namespace SkiResort {
 		public TimeSpan TimeInLift; // In ms
 		public TimeSpan TimePerLift; // in MS
 
-		public long ID { get; private set; }
 		public string Name { get; private set; }
 
-		public long DestinationID { get; private set; } // ID of the Slope we're going to.
-		public long StartID { get; private set; } // ID of the Slope we're going to.
-
-		public List<Skiier> InQue = new List<Skiier>();
-		public int InLifts = 0;
+		public Point End { get; private set; } // ID of the Point we're going to.
+		public Point Start { get; private set; } // ID of the  we're going to.
 
 		Thread thisThread;
 		Resort Resort;
