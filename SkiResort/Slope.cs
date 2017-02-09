@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace SkiResort {
-	public class Slope {
+	public class Slope : IPlace {
 		public long ID { get; private set; }
 		public string Name { get; private set; }
 		public int OnSlope = 0;

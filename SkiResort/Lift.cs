@@ -7,12 +7,14 @@ using System.Threading.Tasks;
 // This class manages all the lifts
 
 namespace SkiResort {
-	class Lift {
-		public int PeoplePerLift; // How many can go in 1 lift
-		public int TimeInLift; // In ms
+	class Lift : IPlace {
+		public int Chance { get; set; }
 
-		public string Name { get; private set; }
+		public TimeSpan Wait { get; set; }
 
-		public Point Destination { get; set; } // Point object for destination
+		public Lift(int chance, TimeSpan wait) {
+			this.Chance = chance;
+			this.Wait = wait;
+		}
 	}
 }
