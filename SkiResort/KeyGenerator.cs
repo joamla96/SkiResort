@@ -2,7 +2,8 @@
 
 namespace SkiResort {
 	public static class KeyGenerator {
-		public static long NextID { get {
+		public static long NextID {
+			get {
 				return GetID();
 			}
 		}
