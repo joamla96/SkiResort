@@ -14,10 +14,6 @@ namespace SkiResort {
 			this.Places = places;
 		}
 
-		internal int TakeLoad(int capacity) { // Passengers gets taken by a lift
-			throw new NotImplementedException();
-		}
-
 		internal void GiveLoad(int passengers) { // Skiiers arrive by lift
 			// Should split out passengers into the various ques and slopes...
 			throw new NotImplementedException();

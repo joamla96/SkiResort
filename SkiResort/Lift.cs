@@ -20,7 +20,7 @@ namespace SkiResort {
 		}
 
 		public void Run() {
-			Passengers = Line.From.TakeLoad(Line.Capacity);
+			Passengers = Line.TakeLoad();
 			Thread.Sleep(Line.LiftTime);
 			Line.To.GiveLoad(Passengers);			
 		}

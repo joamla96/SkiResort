@@ -12,7 +12,7 @@ namespace SkiResort {
 		public TimeSpan LiftTime { get; private set; }
 		public int Capacity { get; private set; }
 		public string Name { get; private set; }
-
+		public int Que { get; private set; }
 		public int Weight { get; private set; }
 
 		Resort Resort;
@@ -39,6 +39,19 @@ namespace SkiResort {
 				Lifts.Add(newLift);
 				Thread.Sleep(Frequency);
 			}
+		}
+
+		public int TakeLoad() {
+			int Load;
+			if (Que < Capacity) {
+				Load = Que;
+			} else Load = Capacity;
+
+			return Load;
+		}
+		
+		public void TakePassenger() {
+			Que++;
 		}
 	}
 }
