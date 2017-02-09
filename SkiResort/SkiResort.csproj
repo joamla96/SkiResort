@@ -45,7 +45,6 @@
     <Compile Include="LiftLine.cs" />
     <Compile Include="Point.cs" />
     <Compile Include="Resort.cs" />
-    <Compile Include="Skiier.cs" />
     <Compile Include="Slope.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
