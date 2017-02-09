@@ -8,6 +8,6 @@ namespace SkiResort {
 	public class Slope {
 		public long ID { get; private set; }
 		public string Name { get; private set; }
-		public List<Skiier> OnSlope = new List<Skiier>(); // List of the Skiiers on the Slope
+		public int OnSlope = 0;
 	}
 }
