@@ -6,25 +6,33 @@ using System.Threading.Tasks;
 
 namespace SkiResort {
 	public class Resort {
-		public Dictionary<long, LiftLine> Lifts;
-		public  Dictionary<long, Slope> Slopes;
+		public List<LiftLine> Lifts;
+		public List<Slope> Slopes;
 
 		public List<string> Events = new List<string>();
 
 		public bool IsOpen = false;
 		public Resort() {
-			Lifts = new Dictionary<long, LiftLine>();
-			Slopes = new Dictionary<long, Slope>();
+			Lifts = new List<LiftLine>();
+			Slopes = new List<Slope>();
 
 			Slope AB1 = new Slope("AB1", this, 8 ,2, 20);
 			Slope AB2 = new Slope("AB2", this, 8 ,2, 20);
 
 			Slope BC1 = new Slope("AB1", this, 4, 15, 100);
 
+			Slopes.Add(AB1);
+			Slopes.Add(AB2);
+			Slopes.Add(BC1);
+
 			LiftLine L_AB1 = new LiftLine("L_AB1", this, 2, 10, 25, 50);
 			LiftLine L_AB2 = new LiftLine("L_AB2", this, 2, 10, 25, 50);
 
 			LiftLine L_BC1 = new LiftLine("L_BC1", this, 1, 20, 10, 100);
+
+			Lifts.Add(L_AB1);
+			Lifts.Add(L_AB2);
+			Lifts.Add(L_BC1);
 
 			List<IPlace> IPA = new List<IPlace>();
 			List<IPlace> IPB = new List<IPlace>();

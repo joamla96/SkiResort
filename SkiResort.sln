@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkiResort", "SkiResort\SkiResort.csproj", "{377C414C-FCDF-4E80-9B53-4BF7AB0C9377}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserInterface.CLI", "UserInterface.CLI\UserInterface.CLI.csproj", "{A3AB5973-7F5D-4481-95ED-05376A77226A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{377C414C-FCDF-4E80-9B53-4BF7AB0C9377}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{377C414C-FCDF-4E80-9B53-4BF7AB0C9377}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{377C414C-FCDF-4E80-9B53-4BF7AB0C9377}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3AB5973-7F5D-4481-95ED-05376A77226A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3AB5973-7F5D-4481-95ED-05376A77226A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3AB5973-7F5D-4481-95ED-05376A77226A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3AB5973-7F5D-4481-95ED-05376A77226A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
