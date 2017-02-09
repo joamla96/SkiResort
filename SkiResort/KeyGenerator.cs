@@ -6,7 +6,7 @@ namespace SkiResort {
 				return GetID();
 			}
 		}
-		
+
 		private static long GetID() {
 			DateTime Now = DateTime.Now;
 			Random rnd = new Random();
