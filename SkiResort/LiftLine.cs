@@ -6,6 +6,6 @@ using System.Threading;
 
 namespace SkiResort {
 	public class LiftLine {
-
+ 
 	}
 }
