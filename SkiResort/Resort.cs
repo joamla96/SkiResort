@@ -51,6 +51,10 @@ namespace SkiResort {
 			L_BC1.From = B;
 			L_BC1.To = C;
 
+			AB1.To = A;
+			AB2.To = A;
+			BC1.To = B;
+
 			IsOpen = true;
 		}
 
