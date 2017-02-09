@@ -5,6 +5,7 @@ namespace SkiResort {
 	public class Point : IPlace {
 		public int Skiiers { get; private set; }
 		public string Name { get; private set; }
+		public int Weight { get; private set; }
 
 		List<IPlace> Places;
 
