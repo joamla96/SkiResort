@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace SkiResort {
 	class Resort {
-		public Dictionary<long, Lift> Lifts;
+		public Dictionary<long, LiftLine> Lifts;
 		public Dictionary<long, Slope> Slopes;
 
 		public List<string> Events = new List<string>();
 
 		public bool IsOpen = false;
 		public Resort() {
-			Lifts = new Dictionary<long, Lift>();
+			Lifts = new Dictionary<long, LiftLine>();
 			Slopes = new Dictionary<long, Slope>();
 
 			this.IsOpen = true;
