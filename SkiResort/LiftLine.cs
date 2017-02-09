@@ -13,10 +13,13 @@ namespace SkiResort {
 		public int Capacity { get; private set; }
 		public string Name { get; private set; }
 
+		Resort Resort;
 		Thread thisThread;
+		List<Lift> Lifts = new List<Lift>(); // My lifts in progress
 
-		public LiftLine(string name, Point from, Point to, TimeSpan frequency, TimeSpan lifttime, int capacity) {
+		public LiftLine(string name, Resort resort, Point from, Point to, TimeSpan frequency, TimeSpan lifttime, int capacity) {
 			this.Name = name;
+			this.Resort = resort;
 			this.From = from;
 			this.To = to;
 			this.Frequency = frequency;
@@ -28,9 +31,11 @@ namespace SkiResort {
 		}
 
 		public void Run() {
-			int Passengers = From.TakeLoad(Capacity);
-
-			Thread.Sleep(Frequency);
+			while (Resort.IsOpen) {
+				Lift newLift = new Lift(this);
+				Lifts.Add(newLift);
+				Thread.Sleep(Frequency);
+			}
 		}
 	}
 }

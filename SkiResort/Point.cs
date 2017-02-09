@@ -8,5 +8,13 @@ namespace SkiResort {
 		Point(string name) {
 			this.Name = name;
 		}
+
+		internal int TakeLoad(int capacity) {
+			throw new NotImplementedException();
+		}
+
+		internal void GiveLoad(int passengers) {
+			throw new NotImplementedException();
+		}
 	}
 }

@@ -5,9 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace SkiResort {
-	class Resort {
+	public class Resort {
 		public Dictionary<long, LiftLine> Lifts;
-		public Dictionary<long, Slope> Slopes;
+		public  Dictionary<long, Slope> Slopes;
 
 		public List<string> Events = new List<string>();
 
@@ -16,7 +16,7 @@ namespace SkiResort {
 			Lifts = new Dictionary<long, LiftLine>();
 			Slopes = new Dictionary<long, Slope>();
 
-			this.IsOpen = true;
+			IsOpen = true;
 		}
 
 
