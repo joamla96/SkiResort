@@ -5,7 +5,7 @@ using System.Threading;
 // This class manages all the lifts
 
 namespace SkiResort {
-	public class LiftLine {
+	public class LiftLine : IPlace {
 		public Point From { get; private set; }
 		public Point To { get; private set; }
 		public TimeSpan Frequency { get; private set; }

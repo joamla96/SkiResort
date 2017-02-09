@@ -8,7 +8,7 @@ namespace SkiResort {
 	public class Slope : IPlace {
 		public long ID { get; private set; }
 		public string Name { get; private set; }
-
+		public int OnSlope { get; private set; }
 		public Slope() {
 
 		}
